@@ -1,0 +1,54 @@
+body { color: #777; font-family:"Microsoft YaHei"; font-size:14px; }
+#wrap { width: 75%; text-align:left; left: 8%; position: relative; padding: 50px 0 15px 0; }
+#content { width: 100%;  padding: 30px; clear: both; }
+#sidebar { width: 210px; float: left; text-align: right; height: inherit; left:8%; position:absolute; height:200px; margin:60px 0 0 0 ; position: fixed; }
+#post { text-align: left; float: left; margin: 20px 0 0 250px; max-width: 700px;}
+#post .log { margin: 0 0 30px 0;}
+a { color: #333; font-size: 14px; font-weight: bold;text-decoration:none;}
+.tx {width: 100px;height: 100px;margin: 10px;border-radius: 50px;}
+code {font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace !important;overflow:scroll;overflow-y:hidden;display:block;padding:.8em !important;overflow-x:auto;line-height:1.45em;background:#002b36;color:#93a1a1 !important;}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* flex: 0 0 auto; */
+    /* text-decoration: none; */
+}
+.logo__cursor {
+	display: inline-block;
+	width: 2px;
+	height: 0.8rem;
+	background: #fe5186;
+	margin-left: 5px;
+	border-radius: 1px;
+	-webkit-animation: cursor 1s infinite;
+	animation: cursor 1s infinite
+}
+
+@-webkit-keyframes cursor {
+	0% {
+		opacity: 0
+	}
+
+	50% {
+		opacity: 1
+	}
+
+	to {
+		opacity: 0
+	}
+}
+
+@keyframes cursor {
+	0% {
+		opacity: 0
+	}
+
+	50% {
+		opacity: 1
+	}
+
+	to {
+		opacity: 0
+	}
+}
