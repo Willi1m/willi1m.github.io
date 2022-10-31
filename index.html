@@ -1,0 +1,76 @@
+<html>
+<meta charset="UTF-8">
+<title>Willi1m</title>
+<link href="main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="wrap">
+	<div id="content">
+		<div id="sidebar"><a href="#!home" class="logo">Willi1m<span class="logo__cursor"></span></a></div>
+		<div id="post">
+			文章载入失败
+		</div>
+	</div>
+</div><script src="q.js"></script>
+<script>
+var 
+M=document.getElementById('post'),
+$=function(i){return document.querySelector(i)};
+
+Q.reg('home',function(){
+   M.innerHTML='<div class="log"><a href="#!article/6">Python 备忘</a></div>\
+   			<div class="log"><a href="#!article/5">Nginx 无限续期证书</a></div>\
+			<div class="log"><a href="#!article/4">Raspberry Pi Zero</a></div>\
+			<div class="log"><a href="#!article/3">Linux 常用命令和常见问题</a></div>\
+			<div class="log"><a href="#!article/2">安装 Windows</a></div>\
+			<div class="log"><a href="#!article/1">QL3X</a></div>';
+		document.title = 'Willi1m';
+}).reg([
+  ['about',function(){
+    M.innerHTML='我是卜卜口';
+  }],
+  ['friend',function(){
+    M.innerHTML='我的朋友们都在这~';
+  }]
+]);
+
+Q.reg('article',function(aid){
+    if(aid==1){
+			M.innerHTML='<img src="https://wx3.sinaimg.cn/mw2000/e87ae5a1gy1h7bn1beyd7j21nw0mg78b" width="1000px" referrerpolicy="no-referrer">';
+			document.title = 'QL3X';
+	}
+	if(aid==2){
+			M.innerHTML='<img src="https://wx3.sinaimg.cn/large/008lqBhxgy1h4ac980d7wj31gk14aqdm" width="1000px" referrerpolicy="no-referrer">';
+			document.title = '安装 Windows';
+	}
+
+	if(aid==3){
+			M.innerHTML='<img src="https://wx2.sinaimg.cn/large/008lqBhxgy1h4ac98cx5oj31gk17iti0" width="1000px" referrerpolicy="no-referrer">';
+			document.title = 'Linux 常用命令和常见问题';
+	}
+
+	if(aid==4){
+			M.innerHTML='<img src="https://wx4.sinaimg.cn/large/008lqBhxgy1h4ac97j8dsj31gk15cwor" width="1000px" referrerpolicy="no-referrer">';
+			document.title = 'Raspberry Pi Zero';
+	}
+
+	if(aid==5){
+			M.innerHTML='<img src="https://wx4.sinaimg.cn/large/008lqBhxgy1h4ac98ptn0j31341u8ne0" width="1000px" referrerpolicy="no-referrer">';
+			document.title = 'Nginx 无限续期证书';
+	}
+
+	if(aid==6){
+			M.innerHTML='<img src="https://wx1.sinaimg.cn/large/e87ae5a1gy1h6aq2wxj6tj21ui0hw795.jpg" width="1000px" referrerpolicy="no-referrer">';
+			document.title = 'Python 备忘';
+	}
+});
+
+
+Q.init({
+    index:'home'
+
+});
+
+</script>
+</body>
+</html>
