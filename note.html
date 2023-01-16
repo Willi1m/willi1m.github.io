@@ -5,7 +5,7 @@
 setInterval(function () {
     var xzsj = new Date().getTime();  //现在时间
     var gqsj = new Date('2020/07/09 19:43').getTime(); //过去时间1
-    var gqsj = new Date('2018/03/31 19:43').getTime(); //过去时间2
+    var gqsj = new Date('2018/03/31 12:00').getTime(); //过去时间2
     var sysj = (xzsj - gqsj) / 1000; //现在时间减过去时间除以1000就是把它的时间戳转换成秒  时间戳的单位是毫秒
     //剩余时间=现在时间-过去时间  求过去时间的原理就是现在时间减去过去时间
     var day = parseInt(sysj / 86400); //剩余秒数除以86400取整得出剩余天数
