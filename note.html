@@ -13,9 +13,21 @@ setInterval(function () {
     var s = parseInt(sysj % 60); //剩余秒数整除60得出来的余数 取整得到剩余秒数
     a1.innerHTML = "QL3X 已运行" + day + "天" + h + "小时" + m + "分" + s + "秒"; //插入a1
 }, 1000)
+setInterval(function () {
+    var xzsj = new Date().getTime();  //现在时间
+    var gqsj = new Date('2018/03/31 12:00').getTime(); //过去时间
+    var sysj = (xzsj - gqsj) / 1000; //现在时间减过去时间除以1000就是把它的时间戳转换成秒  时间戳的单位是毫秒
+    //剩余时间=现在时间-过去时间  求过去时间的原理就是现在时间减去过去时间
+    var day = parseInt(sysj / 86400); //剩余秒数除以86400取整得出剩余天数
+    var h = parseInt(sysj / 3600) - 24 * day; //剩余秒数除以3600得出剩余小时 取整后的剩余小时减去24乘剩余天数
+    var m = parseInt(sysj % 3600 / 60); //剩余秒数整除3600得出来的余数除以60 取整得到剩余分数
+    var s = parseInt(sysj % 60); //剩余秒数整除60得出来的余数 取整得到剩余秒数
+    a2.innerHTML = "iPhone7 已运行" + day + "天" + h + "小时" + m + "分" + s + "秒"; //插入a2
+}, 1000)
 </script>
 </head>
 <body>
 <div id="a1"></div>
+<div id="a2"></div>
 </body>
 </html>
