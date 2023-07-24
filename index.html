@@ -18,7 +18,8 @@ M=document.getElementById('post'),
 $=function(i){return document.querySelector(i)};
 
 Q.reg('home',function(){
-   M.innerHTML='<div class="log"><a href="#!article/6">Python 备忘</a></div>\
+   M.innerHTML='<div class="log"><a href="#!article/7">Cemu 安装荒野之息</a></div>\
+	   		<div class="log"><a href="#!article/6">Python 备忘</a></div>\
    			<div class="log"><a href="#!article/5">Nginx 无限续期证书</a></div>\
 			<div class="log"><a href="#!article/4">Raspberry Pi Zero</a></div>\
 			<div class="log"><a href="#!article/3">Linux 常用命令和常见问题</a></div>\
@@ -63,6 +64,10 @@ Q.reg('article',function(aid){
 	if(aid==6){
 			M.innerHTML='<img src="https://willi1m.github.io/img/6.jpg" width="1000px">';
 			document.title = 'Python 备忘';
+	}
+	if(aid==7){
+			M.innerHTML='<img src="https://willi1m.github.io/img/7.png" width="1000px">';
+			document.title = 'Cemu 安装荒野之息';
 	}
 });
 
